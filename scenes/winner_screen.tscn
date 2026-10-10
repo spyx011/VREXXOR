@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dmf5n2q3yo5g6"]
+
+[ext_resource type="Script" uid="uid://cdejp0f6as4hj" path="res://scripts/winner_screen.gd" id="1_xl8aw"]
+[ext_resource type="Texture2D" uid="uid://d0225oalld5yn" path="res://assets/sprites/VREXXOR You Won Victory Screen.png" id="2_2uytq"]
+[ext_resource type="FontFile" uid="uid://dlucgghxd5peo" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_cuvn6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_egimr"]
+bg_color = Color(0.5568628, 0.7921569, 0.9764706, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0.24705882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7qsd1"]
+bg_color = Color(0.699653, 0.6996536, 0.699653, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0.24705882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d68o"]
+bg_color = Color(0.2901961, 0.2784314, 0.7607843, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0.24705882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[node name="WinnerScreen" type="Control" unique_id=1981158945]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xl8aw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1971229156]
+position = Vector2(577, 324)
+scale = Vector2(0.68940747, 0.69075453)
+texture = ExtResource("2_2uytq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1522677928]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 466.0
+offset_right = 967.0
+offset_bottom = 555.0
+theme_override_constants/separation = 15
+
+[node name="NextLevel" type="Button" parent="HBoxContainer" unique_id=1989817268]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cuvn6")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_egimr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7qsd1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4d68o")
+text = "NextLevel"
+
+[node name="MainMenu" type="Button" parent="HBoxContainer" unique_id=1098649392]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cuvn6")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_egimr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7qsd1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4d68o")
+text = "MainMenu"
+
+[node name="Quit" type="Button" parent="HBoxContainer" unique_id=223423886]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_cuvn6")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_egimr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7qsd1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4d68o")
+text = "Quit
+"
+
+[connection signal="pressed" from="HBoxContainer/NextLevel" to="." method="_on_next_level_pressed"]
+[connection signal="pressed" from="HBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]

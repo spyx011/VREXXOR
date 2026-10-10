@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ddyynik4k6i06"]
+
+[ext_resource type="AudioStream" uid="uid://blrew1evthfr4" path="res://assets/sound's/xtremefreddy-game-music-loop-7-145285.mp3" id="1_ibx2e"]
+[ext_resource type="PackedScene" uid="uid://ddyynik4k6i06" path="res://scenes/music.tscn" id="2_qnihg"]
+
+[node name="Music" unique_id=1769914302 instance=ExtResource("2_qnihg")]
+stream = ExtResource("1_ibx2e")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c8p2y44lqcgmr"]
+
+[ext_resource type="PackedScene" uid="uid://c8p2y44lqcgmr" path="res://scenes/backgroundmucis.tscn" id="1_28j7c"]
+
+[node name="backgroundmucis" type="Node2D" unique_id=714824415]
+
+[node name="backgroundmucis" parent="." unique_id=1986467127 instance=ExtResource("1_28j7c")]
+position = Vector2(244, 431)
+volume_db = 2.69
+pitch_scale = 0.9

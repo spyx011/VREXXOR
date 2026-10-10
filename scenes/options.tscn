@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://m0s88rhwv413"]
+
+[ext_resource type="Texture2D" uid="uid://bmxr45sq8go8j" path="res://assets/sprites/VREXXOR_ Golden Skybound Fantasy(1)(1).png" id="1_yjkok"]
+[ext_resource type="FontFile" uid="uid://dlucgghxd5peo" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_2iy26"]
+[ext_resource type="Script" uid="uid://7isrsuqb515t" path="res://scripts/back_button.gd" id="3_2iy26"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kv8mn"]
+bg_color = Color(0.8776157, 0.8776158, 0.8776157, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0.24705882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1sggn"]
+bg_color = Color(0.699653, 0.6996536, 0.699653, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0.24705882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6vpq"]
+bg_color = Color(0.87261623, 0.8075852, 0.93498856, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0.24705882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.4)
+
+[node name="Options" type="Node2D" unique_id=1411850015]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1624653925]
+position = Vector2(575.5, 333.5)
+scale = Vector2(1.0712963, 1.062603)
+texture = ExtResource("1_yjkok")
+
+[node name="Label" type="Label" parent="." unique_id=1115481475]
+offset_left = 403.0
+offset_top = 199.0
+offset_right = 749.0
+offset_bottom = 243.0
+theme_override_colors/font_color = Color(0.84706074, 0.4276608, 0.37614855, 1)
+theme_override_fonts/font = ExtResource("2_2iy26")
+theme_override_font_sizes/font_size = 30
+text = "Nothing Here"
+
+[node name="Label2" type="Label" parent="." unique_id=1031164558]
+offset_left = 395.0
+offset_top = 547.0
+offset_right = 793.0
+offset_bottom = 591.0
+theme_override_colors/font_color = Color(0.24909317, 0.38482684, 0.49626076, 1)
+theme_override_fonts/font = ExtResource("2_2iy26")
+theme_override_font_sizes/font_size = 30
+text = "Made by WNXVRA"
+
+[node name="back button" type="Button" parent="." unique_id=2124448360]
+offset_left = 282.0
+offset_top = 261.0
+offset_right = 883.0
+offset_bottom = 378.0
+theme_override_colors/font_color = Color(0.053420715, 0.05342096, 0.053420804, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_kv8mn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1sggn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_e6vpq")
+text = "back"
+script = ExtResource("3_2iy26")

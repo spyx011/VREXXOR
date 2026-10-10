@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dj1yc0xyy1sqt"]
+
+[ext_resource type="Script" uid="uid://d1oxugnclr7b6" path="res://scripts/killzone.gd" id="1_xlapc"]
+[ext_resource type="AudioStream" uid="uid://bfbcrhwgwhm2d" path="res://assets/sound's/50986408-aa-with-reverb-meme-381632.mp3" id="2_kl8fp"]
+
+[node name="killzone" type="Area2D" unique_id=1536709839]
+collision_mask = 2
+script = ExtResource("1_xlapc")
+
+[node name="Timer" type="Timer" parent="." unique_id=2140826319]
+wait_time = 0.6
+one_shot = true
+
+[node name="deathsound" type="AudioStreamPlayer2D" parent="." unique_id=1220456022]
+stream = ExtResource("2_kl8fp")
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
