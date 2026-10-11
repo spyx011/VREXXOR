@@ -49,7 +49,7 @@ This project was built as part of my game-development learning journey. I learne
 ## 🔗 Links
 
 - **GitHub Repository:** https://github.com/spyx011/VREXXOR
-- **Playable Demo:** Coming soon!
+- **Playable Demo:** https://wnxvra.itch.io/verxxor
 
 ---
 
