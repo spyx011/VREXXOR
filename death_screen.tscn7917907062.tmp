@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cnjby241xt10i"]
+
+[ext_resource type="Script" uid="uid://dw311vs8kjnmo" path="res://scripts/death_screen.gd" id="1_uyutr"]
+[ext_resource type="Texture2D" uid="uid://cydnseu8m6ud3" path="res://builds/images/Pixel Death Screen_ Crimson Skull Crest.png" id="2_dwo6e"]
+
+[node name="DeathScreen" type="Control" unique_id=405912292]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uyutr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1477115351]
+position = Vector2(581.5, 330)
+scale = Vector2(0.6916168, 0.7048833)
+texture = ExtResource("2_dwo6e")
+
+[node name="Label" type="Label" parent="." unique_id=2099334641]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RetryButton" type="Button" parent="." unique_id=868445508]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 635.0
+offset_top = 413.0
+offset_right = 885.0
+offset_bottom = 513.0
+grow_vertical = 2
+
+[node name="MainMenuButton" type="Button" parent="." unique_id=1297537470]
+layout_mode = 0
+offset_left = 308.0
+offset_top = 433.0
+offset_right = 558.0
+offset_bottom = 533.0
